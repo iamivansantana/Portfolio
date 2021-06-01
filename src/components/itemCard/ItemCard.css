@@ -1,0 +1,136 @@
+.item-card{
+    position: relative;
+    min-width: 20rem;
+    width: 95%;
+    max-width: 25rem;
+    min-height: 17rem;
+    overflow: hidden;
+    
+    background-color: rgb(245, 248, 255);
+
+    margin-left: 2%;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    border-radius: 10%;
+    
+    
+    -webkit-box-shadow: 3px 3px 20px 2px rgba(138,136,138,0.6);
+    -moz-box-shadow: 3px 3px 20px 2px rgba(138,136,138,0.6);
+    box-shadow: 3px 3px 20px 2px rgba(138,136,138,0.6);
+    
+  }
+.item-card:hover{
+    transform: scale(.991);
+    -webkit-box-shadow: 1px 1px 5px 2px rgba(138,136,138,0.6);
+       -moz-box-shadow: 1px 1px 5px 2px rgba(138,136,138,0.6);
+            box-shadow: 1px 1px 5px 2px rgba(138,136,138,0.6);
+}
+.item-card-title{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 35px;
+    border-bottom: .5px solid #d3d2d2;
+}
+.item-card-title-izq{
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 100%;
+    text-align: left;
+    line-height: 2rem; 
+}
+.item-card-title-der{
+    position: relative;
+    width: 30%;
+    height:100%;
+    float: left;
+    text-align: center;
+    line-height: 2rem;
+}
+.social-icons{
+    border-radius: 8px;
+    line-height: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 18px;
+    font-size: 18px;
+    color: black;
+}
+.githubIcon:hover{
+    transition: all 200ms ease;
+    transform: rotateZ(-25deg);
+}
+.card-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0a263873;
+    transition: all 250ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    color: #fff;
+    z-index: 20;
+}
+.item-card-link:hover > .card-hover{
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%,-50%); 
+}
+.item-card-conten{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: rgb(233, 245, 255);
+    width: 100%;
+    height: 11rem;
+    border-bottom: .5px solid #d3d2d2;
+}
+.item-card-left{
+    position: relative;
+    width: 70%;
+    min-height: 100%;
+    height: auto;
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+.item-card-right{
+    position: relative;
+    float: left;
+    width: 30%;
+    min-height: 100%;
+    height: auto;    
+}
+.item-card-description{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+  }
+  .description-item{
+      position: absolute;
+      width: 95%;
+      height: 100%;
+      left: 50%;
+      top: -20%;
+      transform: translate(-50%);
+    color: #242d35;
+      
+  }
+@media (max-width:956px){
+.social-icons{
+    margin: 0 10px;    
+}
+
+}
+@media (min-width:1680px){
+    
+}

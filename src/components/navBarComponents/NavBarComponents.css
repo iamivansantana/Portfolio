@@ -1,0 +1,81 @@
+.navbar-background{
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  background-color: #47d6d6;
+}
+.navbar-fixed{
+    position: fixed;
+    
+    width: 100%;
+    height: 4rem;
+    z-index: 50;
+  }
+  .navbar{
+    display: inline-block;
+    /* position: relative; */
+    width: 100vw;
+  }
+  .navbar-left{
+    position: relative;
+    float: left;
+    width: 35vw;
+    height: 4rem;
+    background-color: white;
+    border-bottom: 1px solid #b4b3b39f;
+  }
+  .navbar-center{
+    position: relative;
+    float: left;
+    
+    width: 22rem;
+    height: 4rem;
+    background-color: transparent;
+    border-bottom: 1px solid #b4b3b39f;
+  }
+  .navbar-right{
+    position: relative;
+    float: left;
+    
+    width: calc( 100vw - (22rem + 35vw) );
+    height: 4rem;
+    background-color: white;
+    border-bottom: 1px solid #b4b3b39f;
+  }
+  .navbarLogo{
+    width: 22rem;
+  }
+  .icon{
+    margin: 1.2rem 18px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: rgb(61, 85, 83);
+  }
+@media (max-width:956px){
+  .icon{
+    margin: .8rem 18px;
+    
+  }
+  .navbar-background{
+    height: 3rem;
+  }
+  .navbar-left{
+    width: 15vw;
+    height: 3rem;
+  }
+  .navbar-center{
+    width: 17rem;
+    height: 3rem;
+  }
+  .navbarLogo{
+    width: 17rem;   
+    height: 3rem;
+  }
+  .navbar-right{
+    width: calc( 100vw - (17rem + 15vw) ); 
+    height: 3rem;
+    background-color: white;
+  }
+ 
+    
+}
